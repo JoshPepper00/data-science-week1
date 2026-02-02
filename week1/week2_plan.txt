@@ -1,0 +1,55 @@
+WEEK 2 CLEANING PLAN
+====================
+Name: [your name]
+Date: [date]
+
+I've completed all 5 tutorials and application checklists.
+
+Looking across all my checklists, these are the 2 most important issues 
+to address in Week 2:
+
+
+ISSUE 1 (Most Important)
+-------------------------
+Brief description: [What's the problem? 1 sentence]
+
+Which tutorial provides the solution: [Tutorial name/number]
+
+Which variable(s) affected: [Variable name(s)]
+
+Why this is important to fix: [Biological/analytical reason]
+
+What I plan to do: [The technique I'll use, in plain English]
+
+
+
+ISSUE 2 (Second Most Important)
+--------------------------------
+Brief description: [What's the problem? 1 sentence]
+
+Which tutorial provides the solution: [Tutorial name/number]
+
+Which variable(s) affected: [Variable name(s)]
+
+Why this is important to fix: [Biological/analytical reason]
+
+What I plan to do: [The technique I'll use, in plain English]
+
+
+
+OTHER ISSUES I NOTICED (but won't fix in Week 2)
+-------------------------------------------------
+- [Issue 3 - will address later if time]
+- [Issue 4 - uncertain how to handle]
+- [Issue 5 - decided to leave as-is because...]
+
+
+QUESTIONS TO DISCUSS IN WEEK 2
+-------------------------------
+Things I'm still unsure about:
+
+1. 
+
+2. 
+
+3.
