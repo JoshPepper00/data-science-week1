@@ -42,6 +42,15 @@ penguins_clean_names |>
   )
   )
 
+# use mutate and if_else
+# for a statement that conditionally changes 
+# the names of the values in a variable
+penguins_clean_names |> 
+  mutate(sex = if_else(
+    sex == "MALE", "Male", "Female"
+  )
+  )
+
 # Convert all species names to uppercase 
 penguins_clean_names |>  
   mutate(species = str_to_upper(species))

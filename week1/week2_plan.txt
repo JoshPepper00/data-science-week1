@@ -1,44 +1,48 @@
 WEEK 2 CLEANING PLAN
 ====================
-Name: [your name]
-Date: [date]
+Name: Josh Pepper
+Date: 03/02/2026
 
 I've completed all 5 tutorials and application checklists.
 
 Looking across all my checklists, these are the 2 most important issues 
 to address in Week 2:
-
+Format Strings in same way
+Flag implausible numeric values
 
 ISSUE 1 (Most Important)
 -------------------------
 Brief description: [What's the problem? 1 sentence]
-
+inconsistent underscore use, capitalization and spelling
 Which tutorial provides the solution: [Tutorial name/number]
-
+3  Strings
 Which variable(s) affected: [Variable name(s)]
-
+site, treatment, collector
 Why this is important to fix: [Biological/analytical reason]
-
+can impact my ability to consolidate and analyse data accurately.
 What I plan to do: [The technique I'll use, in plain English]
-
+Convert all site names to uppercase and 
+conditionally change the names of the values in the variables
 
 
 ISSUE 2 (Second Most Important)
 --------------------------------
 Brief description: [What's the problem? 1 sentence]
-
+there is a suspicious numeric variable (negative body mass values)
 Which tutorial provides the solution: [Tutorial name/number]
-
+7  Check Data Consistency
 Which variable(s) affected: [Variable name(s)]
-
+body_mass_mg
 Why this is important to fix: [Biological/analytical reason]
-
+Can potentially lead to incorrect conclusions.
 What I plan to do: [The technique I'll use, in plain English]
-
+Flag suspicious values and then summarise them
 
 
 OTHER ISSUES I NOTICED (but won't fix in Week 2)
 -------------------------------------------------
+- there values for eggs_hatched when eggs_laid is 0
+- NA values
 - [Issue 3 - will address later if time]
 - [Issue 4 - uncertain how to handle]
 - [Issue 5 - decided to leave as-is because...]
