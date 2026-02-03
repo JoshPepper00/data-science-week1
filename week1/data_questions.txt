@@ -1,0 +1,5 @@
+1) Why are there values for eggs_hatched when eggs_laid is 0
+2) How can I deal with the several NA values in body_mass_mg, eggs_laid, eggs_hatched, collector?
+3) How should I deal with the negative body_mass_mg values?
+4) How should I deal with inconsistent underscore use and capitalization for site, treatment?
+5) How should I deal with the inconsistent spelling of collector names
