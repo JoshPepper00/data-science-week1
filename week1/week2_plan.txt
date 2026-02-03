@@ -41,7 +41,7 @@ Flag suspicious values and then summarise them
 
 OTHER ISSUES I NOTICED (but won't fix in Week 2)
 -------------------------------------------------
-- there values for eggs_hatched when eggs_laid is 0
+- there are values for eggs_hatched when eggs_laid is 0
 - NA values
 - [Issue 3 - will address later if time]
 - [Issue 4 - uncertain how to handle]
