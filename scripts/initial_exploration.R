@@ -43,3 +43,73 @@ mosquito_egg_raw |>
 #   Negative body_mass_mg values
 #   Inconsistent underscore use and capitalization for site, treatment
 #   Inconsistent spelling of collector names
+
+# FIX 1: inconsistent underscore use and capitalization ====
+
+# Show the problem:
+mosquito_egg_raw |>  
+  distinct(site)
+
+mosquito_egg_raw |>  
+  distinct(treatment)
+
+# Fix it:
+mosquito_egg_data_step1 <- mosquito_egg_raw |>
+  # change the site labels to make them consistent
+  mutate(site = case_when(
+    site == "Site A" ~ "Site_A",
+    site == "Site-A" ~ "Site_A",
+    site == "site_a" ~ "Site_A",
+    site == "Site B" ~ "Site_B",
+    site == "site_b" ~ "Site_B",
+    site == "Site-B" ~ "Site_B",
+    site == "Site C" ~ "Site_C",
+    site == "site_c" ~ "Site_C",
+    site == "Site-C" ~ "Site_C",
+    .default = as.character(site)
+  )
+  )
+
+mosquito_egg_data_step1_next <- mosquito_egg_data_step1 |>
+  # change the treatment labels to make them consistent
+  mutate(treatment = case_when(
+    treatment == "control" ~ "Control",
+    treatment == "CONTROL" ~ "Control",
+    treatment == "LOW_DOSE" ~ "Low_dose",
+    treatment == "low_dose" ~ "Low_dose",
+    treatment == "MEDIUM_DOSE" ~ "Medium_dose",
+    treatment == "medium_dose" ~ "Medium_dose",
+    treatment == "HIGH_DOSE" ~ "High_dose",
+    treatment == "high_dose" ~ "High_dose",
+    .default = as.character(treatment)
+  )
+  )
+  
+# Verify it worked:
+mosquito_egg_data_step1_next |>  
+  distinct(site) 
+
+mosquito_egg_data_step1_next |>
+  distinct(treatment)
+
+# What changed and why it matters:
+# [2-3 sentences explaining consequences]
+# Has Has allowed me to consolidate my data.
+  
+  
+# FIX 2: [Issue description]  ====
+
+# Show the problem:
+# [Code]
+
+# Fix it:
+mosquito_egg_data_step2 <- mosquito_egg_data_step1 |>
+  # YOUR CODE
+  
+  
+# Verify it worked:
+# [Code]
+  
+# What changed and why it matters:
+# [2-3 sentences]
+#
