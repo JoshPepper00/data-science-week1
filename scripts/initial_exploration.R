@@ -94,7 +94,8 @@ mosquito_egg_data_step1_next |>
 
 # What changed and why it matters:
 # [2-3 sentences explaining consequences]
-# Has Has allowed me to consolidate my data.
+# Has Has allowed me to consolidate my data - there are now three sites instead of 12 and 4 treatment 
+# values instead of 12.
   
   
 # FIX 2: [Issue description]  ====
@@ -103,13 +104,13 @@ mosquito_egg_data_step1_next |>
 # [Code]
 
 # Fix it:
-mosquito_egg_data_step2 <- mosquito_egg_data_step1 |>
-  # YOUR CODE
-  
+mosquito_egg_data_step2 <- mosquito_egg_data_step1_next |>
+  filter(!if_any(c(eggs_laid, eggs_hatched), is.na))
   
 # Verify it worked:
-# [Code]
-  
+mosquito_egg_data_step3 <- mosquito_egg_data_step2 |>
+  filter(if_any(eggs_laid, is.na) & if_any(eggs_hatched, is.na))
+
 # What changed and why it matters:
 # [2-3 sentences]
 #
